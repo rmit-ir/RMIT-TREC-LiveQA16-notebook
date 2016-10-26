@@ -1,0 +1,31 @@
+\begin{table}[!t]
+\centering
+\caption{
+Comparing Title-only to Title + Description first-stage bag-of-words queries.
+We report Recall@$k$, and ERR@$20$. Note that all of the Title-only 
+results were found to be significantly better with a $p < 0.01$,
+using a two-tailed paired $t$-test.}
+\label{tab:titlevsfull}
+\begin{tabular}{lcc}
+\toprule
+{\bf Metric} & {\bf Title-only} & {\bf Title + Description}\\
+\midrule
+\multicolumn{3}{c}{4+ Relevance}\\
+\midrule
+Recall@10   & 0.1268 & 0.0995\\
+Recall@100  & 0.1870 & 0.1518\\
+Recall@1000 & 0.2485 & 0.2036\\
+\midrule
+\multicolumn{3}{c}{3+ Relevance}\\
+\midrule
+Recall@10   & 0.2134 & 0.1606\\
+Recall@100  & 0.3108 & 0.2457\\
+Recall@1000 & 0.4129 & 0.3277\\
+\midrule
+\multicolumn{3}{c}{Weights 4,3,2,1}\\
+\midrule
+ERR@20      & 0.1624 & 0.1351\\
+\bottomrule
+\end{tabular}
+\end{table}
+
